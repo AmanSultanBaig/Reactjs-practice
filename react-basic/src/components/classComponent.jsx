@@ -3,24 +3,27 @@ import React, { Component } from 'react';
 class ClassComponent extends Component {
     constructor() {
         super();
-        this.state = {
-            count: 0
-        }
+
     }
 
-    // change state
-    counter = () => {
-        this.setState({
-            count: this.state.count + 1
-        })
-    }
 
     render() {
+        let array = ['Aman', 'Nabeel', 'Hamza', 'Raza'];
+        let list = []
+        for (let i = 0; i < array.length; i++) {
+            list.push(array[i])
+        }
         return (
-            <div>
-                {this.counter}
-                <button onClick={this.counter}>{this.state.count} times</button>
-            </div>
+            <table>
+                <thead>
+                    <th>Names</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{list}</td>
+                    </tr>
+                </tbody>
+            </table>
         )
     }
 }
