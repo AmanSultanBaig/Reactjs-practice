@@ -4,20 +4,24 @@ class ClassComponent extends Component {
     constructor() {
         super();
         this.state = {
-            status: true
+            count: 0
         }
     }
 
+    // change state
+    counter = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
+
     render() {
-        if (this.state.status === true) {
-            return <button>Login</button>
-        }else {
-            return <button>Logout</button>
-        }
-        // return (
-        //     <div>
-        //     </div>
-        // )
+        return (
+            <div>
+                {this.counter}
+                <button onClick={this.counter}>{this.state.count} times</button>
+            </div>
+        )
     }
 }
 
