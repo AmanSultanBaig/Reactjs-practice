@@ -6,7 +6,7 @@ import ClassComponent from './components/classComponent'
 
 ReactDOM.render(
   <div>
-    <FuncationalComponent />
+    <FuncationalComponent name="Aman Sultan Baig"/>
     {/* stateless component */}
     <ClassComponent /> 
     {/* stateful component */}

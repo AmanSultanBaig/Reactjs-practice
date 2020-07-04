@@ -1,8 +1,9 @@
 import React from 'react';
 
-function FuncationalComponent() {
+function FuncationalComponent(props) {
+    // stateless approach
     return (
-        <h1>Hello From Functional Component</h1>
+        <h1>Hello {props.name} </h1>
     )
 }
 
