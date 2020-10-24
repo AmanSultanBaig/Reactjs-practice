@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FuncationalComponent from './components/functionalComponent'
-import ClassComponent from './components/classComponent'
 // import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <FuncationalComponent name="Aman Sultan Baig"/>
-    {/* stateless component */}
-    <ClassComponent /> 
-    {/* stateful component */}
+    Hello World
   </div>
   , document.getElementById('root'))
 
