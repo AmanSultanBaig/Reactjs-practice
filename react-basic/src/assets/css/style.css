@@ -1,7 +1,24 @@
-.box {
+/* .box {
     background-color: red;
     padding: 2rem;
     text-align: center;
     color: white;
     font-size: 34px
+} */
+.box {
+    background-color: lightblue;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.toggleBtn {
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    font-size: 20px
+}
+
+.toggleImage {
+    margin-top: 2rem
 }
