@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App'
 
 ReactDOM.render(
-  <App />
+  <App Name="Functional Component"/>
   , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
