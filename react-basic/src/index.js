@@ -4,9 +4,7 @@ import ReactDOM from 'react-dom';
 
 import App from './components/App'
 
-ReactDOM.render(
-  <App Name="Functional Component"/>
-  , document.getElementById('root'))
+ReactDOM.render(<App Name="React JS" />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
