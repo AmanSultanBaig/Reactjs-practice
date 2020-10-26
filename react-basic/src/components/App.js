@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import css from external css file 
 import '../assets/css/style.css'
+import Event from './Event'
 
 // css style object
 // let styleObj = {
@@ -17,7 +18,7 @@ function App({ Name }) { // passing props
     const [image, imageState] = useState(false)
 
     // click handler for toggle image show/hide
-   function toggleImage() {
+    function toggleImage() {
         imageState(!image)
         console.log(`State Now ${image}`)
     }
@@ -25,7 +26,7 @@ function App({ Name }) { // passing props
     return (
         <div className="box">
             <h1>Hello From {Name}</h1>
-            <button onClick={toggleImage} className="toggleBtn">Toggle Image</button>
+            <Event clickMe={toggleImage}/>
             <div>
                 {image ? <img className="toggleImage" src="https://i.ytimg.com/vi/PwofRNGX3dw/hqdefault.jpg" /> : null}
             </div>
