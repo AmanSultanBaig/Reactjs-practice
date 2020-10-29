@@ -6,9 +6,13 @@ export default class Event extends React.Component {
         super(props)
     }
 
+    UpdateState = () => {
+        this.props.myHandler(true)
+    }
+
     render() {
         return (
-             <button onClick={this.props.clickMe} className="toggleBtn">Toggle Image</button> 
+             <button onClick={this.UpdateState} className="toggleBtn">Toggle Image</button> 
             // <h1>Hello from Event Component</h1>
         )
     }

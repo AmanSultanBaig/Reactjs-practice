@@ -17,18 +17,23 @@ function App({ Name }) { // passing props
     // initialize state 
     const [image, imageState] = useState(false)
 
+    const [childState, UpdateChildState] = useState(false)
     // click handler for toggle image show/hide
     function toggleImage() {
         imageState(!image)
         console.log(`State Now ${image}`)
     }
 
+    function UpdateStateByChild(bool) {
+        UpdateChildState(bool)
+    }
+
     return (
         <div className="box">
             <h1>Hello From {Name}</h1>
-            <Event clickMe={toggleImage}/>
+            <Event clickMe={toggleImage} myHandler={UpdateStateByChild} />
             <div>
-                {image ? <img className="toggleImage" src="https://i.ytimg.com/vi/PwofRNGX3dw/hqdefault.jpg" /> : null}
+                {childState ? <img className="toggleImage" src="https://i.ytimg.com/vi/PwofRNGX3dw/hqdefault.jpg" /> : null}
             </div>
         </div>
     )
